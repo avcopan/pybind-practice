@@ -10,5 +10,6 @@ module1 = Extension('example',
                     language='c++')
 
 setup(name='example',
+      packages=['example', ],
       ext_modules=[module1],
       install_requires=['pybind11', ],)
