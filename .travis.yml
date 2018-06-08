@@ -7,8 +7,8 @@ python:
 
 install:
     - pip install pybind11
+    - pip install pytest
     - pip install .
 
 script:
-    - python -c 'import pybind11; print(pybind11)'
-    - python -c 'import pybind_example; print(pybind_example)'
+    - pytest -v
