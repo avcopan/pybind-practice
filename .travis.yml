@@ -12,4 +12,6 @@ script:
     - ls
     - which python
     - which gcc
-    - python3 -c 'import pybind11; print(pybind11)'
+    - python -c 'import pybind11; print(pybind11)'
+    - sudo python setup.py install
+    - python -c 'import pybind_example; print(pybind_example)'
