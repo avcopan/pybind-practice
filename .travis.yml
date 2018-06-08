@@ -7,4 +7,4 @@ python:
 
 install:
     - pip install pybind11
-    - pip install -e .
+    - python3 setup.py install
