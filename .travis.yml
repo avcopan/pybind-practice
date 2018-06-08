@@ -5,8 +5,11 @@ os: linux
 python:
     - "3.6"
 
+install:
+    - pip install -r pybind11
+
 script:
     - ls
     - which python
     - which gcc
-    - python3 -c 'import pybind_example; print(pybind_example)'
+    - python3 -c 'import pybind11; print(pybind11)'
