@@ -1,15 +1,14 @@
 import pybind11
 from distutils.core import setup, Extension
 
-module1 = Extension('example',
-                    sources=['example.cpp'],
+module1 = Extension('pybind_example',
+                    sources=['pybind_example.cpp'],
                     include_dirs=[pybind11.get_include(False),
                                   pybind11.get_include(False)],
                     extra_compile_args=['-O3', '-Wall', '-shared', '-std=c++11',
                                         '-fPIC'],
                     language='c++')
 
-setup(name='example',
-      packages=['example', ],
+setup(name='pybind_example',
       ext_modules=[module1],
       install_requires=['pybind11', ],)
