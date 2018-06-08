@@ -14,7 +14,7 @@ install:
     - sudo python3 setup.py build
     - ls
     - ls build/
-    - "mv build/lib.linux-x86_64-3.4/* ."
+    - "sudo mv build/lib.linux-x86_64-3.4/* ."
     - ls
     - sudo python3 setup.py install
 
