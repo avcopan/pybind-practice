@@ -9,3 +9,4 @@ script:
     - ls
     - which python
     - which gcc
+    - python3 -c 'import pybind_example; print(pybind_example)'
