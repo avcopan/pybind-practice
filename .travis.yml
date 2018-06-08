@@ -13,5 +13,5 @@ script:
     - which python
     - which gcc
     - python -c 'import pybind11; print(pybind11)'
-    - sudo python setup.py install
+    - pip install .
     - python -c 'import pybind_example; print(pybind_example)'
