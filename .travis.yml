@@ -6,4 +6,5 @@ python:
     - "3.6"
 
 install:
+    - pip install pybind11
     - pip install -e .
