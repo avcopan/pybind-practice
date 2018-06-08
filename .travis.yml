@@ -9,8 +9,10 @@ install:
     - sudo apt-get install python3-dev
     - sudo apt-get install gcc
     - sudo -H pip install pybind11
+    - sudo -H pip install pytest
     - sudo python setup.py build
     - ls
+    - ls build/
 
 script:
     - pytest -v
