@@ -12,6 +12,7 @@ install:
 
 script:
     - pytest -v
-    - ls
-    - ls build/
-    - ls build/temp.linux-x86_64-3.6/*
+    - gcov -r build/temp.linux-x86_64-3.6/*
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
