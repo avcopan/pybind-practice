@@ -33,3 +33,4 @@
 
 # Ignore cache files
 .pytest_cache/
+build/

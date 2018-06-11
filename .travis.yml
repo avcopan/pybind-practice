@@ -8,7 +8,9 @@ python:
 install:
     - pip install pybind11
     - pip install pytest
-    - pip install .
+    - pip install --install-option="--codecov" .
 
 script:
+    - ls
     - pytest -v
+    - ls
