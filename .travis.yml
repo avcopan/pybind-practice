@@ -14,3 +14,4 @@ script:
     - pytest -v
     - ls
     - ls build/
+    - ls build/temp.linux-x86_64-3.6/*
