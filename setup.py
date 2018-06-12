@@ -1,13 +1,11 @@
 import sys
-import pybind11
 from distutils.core import setup, Extension
+from pybind11 import get_include as get_pybind_inc
 from distutils.sysconfig import get_python_inc
 
 
 # Lists of flags for the compiler
-include_dirs = [get_python_inc(),
-                pybind11.get_include(False),
-                pybind11.get_include(True)]
+include_dirs = [get_python_inc(), get_pybind_inc()]
 compile_args = ['-O3', '-Wall', '-shared', '-std=c++11', '-fPIC']
 link_args = []
 
